@@ -1,2 +1,2 @@
-CLASE 4
-Análisis: cómo calcular figuras geométricas.
+CLASE 6
+calcular figuras geométricas.
