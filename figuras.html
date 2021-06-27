@@ -7,6 +7,7 @@
     <title>Figuras Geometricas | Curso Plactico de JavaScript</title>
 </head>
 <body>
+    <script src="./figuras.js"></script>
     <header>
         <h1>Figuras Geometricas</h1>
         <p>Este es el taller del curso practico de JavaSdcript</p>
@@ -70,7 +71,19 @@
             <button type="button" onclick="CalcularAreaCirculoRadio()">Calcular Area</button>
         </form>
     </section>
-    <script src="./figuras.js"></script>
-    
+
+    <!-- Calculo Triangulo Isosceles-->
+    <section>
+        <h2>Calcular el perimetro de un Triangulo Isosceles</h2>
+        <form> 
+            <label for="InputPerimetroTrianguloAI">Introduzca el valor del lado A: </label>
+            <input id="InputPerimetroTrianguloAI" type="number"/>
+            <label for="InputPerimetroTrianguloBI">Introduzca el valor del lado B: </label>
+            <input id="InputPerimetroTrianguloBI" type="number"/>
+            <label for="InputPerimetroTrianguloCI">Introduzca el valor del lado C: </label>
+            <input id="InputPerimetroTrianguloCI" type="number"/>
+            <button type="button" onclick="CalcularPerimetroTrianguloI()">Calcular Perimetro</button>
+        </form>
+    </section>   
 </body>
 </html>

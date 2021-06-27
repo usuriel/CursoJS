@@ -159,3 +159,18 @@ function CalcularAreaCirculoRadio (){
     const resultado = areaCirculoConF ( radio );
     alert(resultado);
 }
+
+// Trinagulo Isosceles
+function CalcularPerimetroTrianguloI (){
+    const inputA =  document.getElementById("InputPerimetroTrianguloAI");
+    let lado_A =  inputA.value;
+    const inputB =  document.getElementById("InputPerimetroTrianguloBI");
+    let lado_B =  inputB.value;
+    const inputC =  document.getElementById("InputPerimetroTrianguloCI");
+    let lado_C =  inputC.value;
+
+    if ((lado_A === lado_B && lado_A != lado_C) || (lado_B === lado_C && lado_B != lado_A) || (lado_A === lado_C && lado_A != lado_B)) {
+    let perimetro = perimetroTrianguloConF(parseFloat(lado_A), parseFloat(lado_B), parseFloat(lado_C));
+    alert(perimetro)
+    } else {alert ("Los datos no pertenecen a un triangulo Isoscele")}
+}
