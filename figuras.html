@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +11,65 @@
         <h1>Figuras Geometricas</h1>
         <p>Este es el taller del curso practico de JavaSdcript</p>
     </header>
+
+    <!--  Seccion Calculos Cuadrados  -->
+
     <section>
-        <h2>Calcular el area y perimetro de un cuadrado</h2>
+        <h2>Calcular el perimetro de un cuadrado</h2>
         <form> 
-            <label for="InputCuadrado">Escribe cuanto mide cada lado de tu cuadrado: </label>
-            <input id="InputCuadrado" type="number"/>
+            <label for="InputPerimetroCuadrado">Introduzca el valor de uno de sus lados: </label>
+            <input id="InputPerimetroCuadrado" type="number"/>
             <button type="button" onclick="CalcularPerimetroCuadrado()">Calcular Perimetro</button>
             <button type="button" onclick="CalcularAreaCuadrado()" >Calcular Area</button>
+
         </form>
     </section>
 
+     <!--  Seccion Calculos Triangulos  -->
 
+    <section>
+        <h2>Calcular el perimetro de un Triangulo</h2>
+        <form> 
+            <label for="InputPerimetroTrianguloA">Introduzca el valor del lado A: </label>
+            <input id="InputPerimetroTrianguloA" type="number"/>
+            <label for="InputPerimetroTrianguloB">Introduzca el valor del lado B: </label>
+            <input id="InputPerimetroTrianguloB" type="number"/>
+            <label for="InputPerimetroTrianguloC">Introduzca el valor del lado C: </label>
+            <input id="InputPerimetroTrianguloC" type="number"/>
+            <button type="button" onclick="CalcularPerimetroTriangulo()">Calcular Perimetro</button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcular el Area de un Triangulo</h2>
+        <form> 
+            <label for="InputAreaTrianguloBase">Introduzca el valor de la Base: </label>
+            <input id="InputAreaTrianguloBase" type="number"/>
+            <label for="InputAreaTrianguloAltura">Introduzca el valor de la Altura: </label>
+            <input id="InputAreaTrianguloAltura" type="number"/>
+            <button type="button" onclick="CalcularAreaTriangulo()" >Calcular Area</button>
+        </form>
+    </section>
 
+     <!--  Seccion Calculos Circulos  -->
+
+    <section>
+        <h2>Calcular el perimetro y Area de un Circulo a partir de su diametro</h2>
+        <form> 
+            <label for="InputCirculoDiametro">Introduzca el valor del Diametro: </label>
+            <input id="InputCirculoDiametro" type="number"/>
+            <button type="button" onclick="CalcularPerimetroCirculoDiametro()">Calcular Perimetro</button>
+            <button type="button" onclick="CalcularAreaCirculoDiametro()">Calcular Area</button>            
+        </form>
+    </section>
+    <section>
+        <h2>Calcular el perimetro y Area de un Circulo a partir de su radio</h2>
+        <form> 
+            <label for="InputCirculoRadio">Introduzca el valor del Radio: </label>
+            <input id="InputCirculoRadio" type="number"/>
+            <button type="button" onclick="CalcularPerimetroCirculoRadio()">Calcular Perimetro</button>
+            <button type="button" onclick="CalcularAreaCirculoRadio()">Calcular Area</button>
+        </form>
+    </section>
     <script src="./figuras.js"></script>
     
 </body>
