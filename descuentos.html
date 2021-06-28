@@ -13,19 +13,27 @@
 </header>
 <script src="./descuentos.js"></script>
   <section>
-    <h2> Calcula el precio de tus producto aqui</h2>
+    <h2> Calcula el descuento del precio de tu producto sin cupon aqui:</h2>
     <form action="">
-        <label for="InputPrice">Introduzca El Precio Del Producto</label>
+        <label for="InputPrice">Introduzca El Precio Del Producto:</label>
         <input id= "InputPrice" type="number">
-
-        <label for="InputDiscount">Introduzca El Descuento</label>
+        <label for="InputDiscount">Introduzca el descuento cortesia de la tienda aqui:</label>
         <input id="InputDiscount"type="number">
         <button type="button" onclick="CalcularMontoPagar()">Calcular Monto A Pagar</button>
         <p id="MontoPagarDescuento"></p>
     </form>
+  </section>
 
-
-
+  <section>
+    <h2> Calcula el descuento del precio de tu producto con cupon aqui:</h2>
+    <form action="">
+        <label for="InputPriceC">Introduzca El Precio Del Producto:</label>
+        <input id= "InputPriceC" type="number">
+        <label for="InputDiscountC">Introduzca su numero de cupon aqui:</label>
+        <input id="InputDiscountC"type="text">
+        <button type="button" onclick="CalcularMontoPagarC()">Calcular Monto A Pagar</button>
+        <p id="MontoPagarDescuentoC"></p>
+    </form>
   </section>
 
     
