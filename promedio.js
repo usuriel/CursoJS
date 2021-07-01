@@ -1,35 +1,44 @@
 // Media Aritmetica con for
 
-const Sueldos = [100, 200, 300, 500];
+const SueldosD = [100, 200, 500, 800, 400000, 100, 200, 500, 800, 400000];
+function OrganizarLista (a, b){return a - b;}
+Sueldos =  SueldosD.sort(OrganizarLista);
 
-let SumaSueldo = 0;
+let SumaSueldoF = 0;
 for (let i = 0; i < Sueldos.length; i++){
-    SumaSueldo = SumaSueldo + Sueldos[i];
+    SumaSueldoF = SumaSueldoF + Sueldos[i];
 }
 
-const Promedio = SumaSueldo / Sueldos.length;
+const MediaAritmetica = SumaSueldoF / Sueldos.length;
 
 // media aritmetica con reduce
 
-function CalcularMediaAritmetica(Lista){
-    const SumaLista = Lista.reduce(
+function CalcularMediaAritmetica(Sueldos){
+    const SumaSueldosR = Sueldos.reduce(
         function (ValorAcumulado = 0, NuevoElemento){
             return ValorAcumulado + NuevoElemento;
         }
     );
 
-    const Promedio = SumaLista / Lista.length;
-    return Promedio;
-
+    const PromedioR = SumaSueldosR / Sueldos.length;
+    return PromedioR;
 }
 
 //Busrcar la mediana
 
-const Mediana = parseInt(Sueldos.length/2);
+const MedioSueldos = parseInt(Sueldos.length / 2);
 
-function Par(Numero){
-    if (Numero % 2 === 0)   { return true;}
-    else                    { return false; }
-}
+function Par (ResultadoDivicion){
+    if (ResultadoDivicion % 2 === 0)        { return true  }
+    else                                    { return false }
+};
 
+let Mediana;
 
+if (Par (Sueldos.length))   {
+    const Sueldo01 = Sueldos[MedioSueldos - 1] ;
+    const Sueldo02 = Sueldos[MedioSueldos];
+    const PromedioSuma = CalcularMediaAritmetica([Sueldo01, Sueldo02]);
+    Mediana = PromedioSuma;
+ }
+else                        {Mediana = Sueldos[MedioSueldos]};
