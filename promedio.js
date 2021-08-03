@@ -1,6 +1,6 @@
 // Media Aritmetica con for
 
-const SueldosD = [100, 200, 500, 800, 400000, 100, 200, 500, 800, 400000];
+const SueldosD = [100, 200, 500, 800, 100, 200, 500, 800, 500, 100, 200, 500, 800, 400000];
 function OrganizarLista (a, b){return a - b;}
 Sueldos =  SueldosD.sort(OrganizarLista);
 
@@ -42,3 +42,23 @@ if (Par (Sueldos.length))   {
     Mediana = PromedioSuma;
  }
 else                        {Mediana = Sueldos[MedioSueldos]};
+
+
+// Buscar la Moda
+
+const SueldosModa ={};
+
+SueldosD.map(
+    function (elementos){
+        if (SueldosModa[elementos]) { SueldosModa[elementos] += 1}
+        else                        {SueldosModa[elementos] = 1}
+    }
+);
+
+const SueldosA = Object.entries(SueldosModa).sort(
+    function (ValorAcumulado, ValorNuevo) {
+       return ValorAcumulado[1] - ValorNuevo[1] 
+    }
+);
+
+const Moda = SueldosA[SueldosA.length - 1];
