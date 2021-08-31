@@ -1,0 +1,20 @@
+const RD = [];
+
+RD.push({ name: "Camila00", salary: 1000 });
+RD.push({ name: "Paola", salary: 1050 });
+RD.push({ name: "Ramona", salary: 950 });
+RD.push({ name: "Natalia", salary: 1100 });
+RD.push({ name: "Luisa", salary: 900 });
+RD.push({ name: "Rigoberto", salary: 1150 });
+RD.push({ name: "Noemi", salary: 850 });
+RD.push({ name: "Margarita", salary: 1200 });
+RD.push({ name: "Yadelkis", salary: 800 });
+RD.push({ name: "Camila01", salary: 1000 });
+RD.push({ name: "Camila02", salary: 1000 });
+RD.push({ name: "Camila03", salary: 1000 });
+RD.push({ name: "Camila04", salary: 1000 });
+RD.push({ name: "Camila05", salary: 1000 });
+RD.push({ name: "Camila06", salary: 1000 });
+RD.push({ name: "Camila07", salary: 1000 });
+RD.push({ name: "Camila08", salary: 1000 });
+RD.push({ name: "Camila09", salary: 1000 });
