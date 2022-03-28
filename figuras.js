@@ -173,4 +173,4 @@ function CalcularPerimetroTrianguloI (){
     let perimetro = perimetroTrianguloConF(parseFloat(lado_A), parseFloat(lado_B), parseFloat(lado_C));
     alert(perimetro)
     } else {alert ("Los datos no pertenecen a un triangulo Isoscele")}
-};
+}
